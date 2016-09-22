@@ -1,7 +1,16 @@
 var n = require('./index');
-var config = {
-  url: 'microsoft.com'
+var data = {
+  slack: {
+    token: '',
+    channel: '',
+    body: 'Talk to asdf about this http://imgur.com/gallery/cr0G5',
+    attachments: [
+        {
+            "text": "And here's an attachment!"
+        }
+    ]
+  }
 }
 
-n.setConfig(config).send(['slack'], {boo: 'loo'});
+n.send(['slack'], data);
 //console.log(n.getConfig());
