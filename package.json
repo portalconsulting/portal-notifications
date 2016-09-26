@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/portalconsulting/portal-notifications#readme",
   "dependencies": {
+    "plivo": "^0.4.0",
     "request": "latest"
   }
 }
